@@ -280,8 +280,3 @@ app.get('/contact', function (req, res) {
     res.write('How Are You');
     res.end();
 });
-
-app.listen(port, function () {
-    console.log(`Server Running on http://localhost:${port}`);
-    // console.log('Server Running on Port ' + port);
-});

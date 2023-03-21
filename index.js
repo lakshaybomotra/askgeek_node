@@ -9,7 +9,7 @@ const fileUpload = require('express-fileupload');
 const mysql = require('mysql');
 
 const conn = mysql.createConnection({
-    host: 'localhost',
+    host: 'db4free.net',
     user: 'askthegeeksadmin',
     password: 'askthegeeks@21',
     database: 'askthegeeksdb'

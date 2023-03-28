@@ -188,7 +188,7 @@ app.post('/member-register-action', function (req, res) {
 
         let form = req.body;
         if (row.length === 0) {
-            let sql = `INSERT INTO members (username,member_name,description,photo,mobile,email,password,ranking) VALUES ('${form.username}', '${form.member_name}', '${form.description}', 'profile.jpg', '${form.mobile}', '${form.email}', '${form.password}', '0');
+            let sql = `INSERT INTO members (username,member_name,description,photo,mobile,email,password,ranking,status) VALUES ('${form.username}', '${form.member_name}', '${form.description}', 'profile.jpg', '${form.mobile}', '${form.email}', '${form.password}', '0', 'active');
 `;
             conn.query(sql, (err, result) => {
                 if (err) throw err;
